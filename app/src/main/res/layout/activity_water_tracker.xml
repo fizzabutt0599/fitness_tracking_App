@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#DD9EF3F6"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/waterTrackerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Water Tracker"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <ProgressBar
+        android:id="@+id/waterProgressBar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:max="3000"
+        android:progress="0"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvWaterAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 ml / 3000 ml"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/btnAddWater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add 250ml"
+        android:backgroundTint="@android:color/holo_blue_light" />
+</LinearLayout>
